@@ -10,7 +10,7 @@ to Run the file :
           
           go build main2.go
           
-# main2.go is sorting by the person number  
+# main2.go is sorting by the person number  and gives all the matches
 
 Output looks:
           
