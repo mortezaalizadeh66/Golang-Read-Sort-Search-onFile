@@ -67,16 +67,20 @@ func main() {
 	}
 
 	// Search for a name in the data
-	var name string
+	var family string
+	var find bool
 	fmt.Print("Enter name to search for: ")
-	fmt.Scanln(&name)
+	fmt.Scanln(&family)
 
 	for _, p := range people {
-		if fuzzy.Match(strings.ToLower(name), strings.ToLower(p.Name)) {
+		if fuzzy.Match(strings.ToLower(family), strings.ToLower(p.Family)) {
 			fmt.Println(p)
-			return
+			find = true
 		}
+
 	}
 
-	fmt.Printf("No record found for name '%s'\n", name)
+	if find == false {
+		fmt.Printf("No record found for name '%s'\n", family)
+	}
 }
