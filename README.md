@@ -6,9 +6,9 @@ Search in the file by devide and conqure method
 
 to Run the file :
 
-          go build main.go
+          go run main.go
           
-          go build main2.go
+          go run main2.go
           
 # main2.go is sorting by the person number  and gives all the matches
 
